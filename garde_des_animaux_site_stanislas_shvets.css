@@ -1,0 +1,709 @@
+html{
+    margin: 0;
+    padding: 0;
+    content: 0;
+}
+/*------------------------------------------------------------------- page d'accueil ------------------------------------------------------------------------*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("DALL-E page d'accueil garde des animaux.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 88%;
+    background-position-y: 80%;
+}
+
+/*------------------------------------------------------------------------menu-----------------------------------------------------------------------------*/
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(164, 198, 207, 0.95);
+    width: 100%;
+    height: clamp(45px, 3.5vw, 60px);
+    list-style-type: none;
+}
+ul li{
+    color: white;
+    text-decoration: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: #0047FF;
+    transition: 0.2s;
+}
+
+.navbar li{
+    display: inline-block;
+    width: 16%;
+}
+#numéro{
+    margin-left: 5vw;
+    font-size: clamp(15px, 1.5vw, 24px);
+}
+#accueil{
+    margin-top: 0.4%;
+    margin-left: 2.2vw;
+    font-size: clamp(22px, 1.75vw, 30px);
+}
+#service{
+    font-size: clamp(22px, 1.75vw, 30px);
+}
+#avis{
+    font-size: clamp(22px, 1.75vw, 30px);
+}
+#nous{
+    margin-left: -2.8%;
+    font-size: clamp(22px, 1.75vw, 30px);
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    #accueil{
+        margin-left: 2vw;
+    }
+    #numéro{
+        margin-left: 4vw;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #accueil{
+        margin-left: 1.8vw;
+    }
+    #numéro{
+        margin-left: 3.8vw;
+    }
+}
+@media screen and (max-width: 900px) {
+    #accueil{
+        margin-left: 1.7vw;
+    }
+    #numéro{
+        margin-left: 3.7vw;
+    }
+}
+
+.menu_hamburger{
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    width: 70px;
+    display: none;
+}
+.trois_traits{
+    position: absolute;
+    right: 50.3px;
+    top: 38.7px;
+    width: 40px;
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .menu_hamburger{
+        right: 29px;
+        top: 35px;
+    }
+    .trois_traits{
+        right: 29px;
+        top: 34px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .menu_hamburger{
+        display: block;
+        z-index: 11;
+        position: fixed;
+    }
+    .trois_traits{
+        display: block;
+        z-index: 11;
+        padding: 15px;
+        position: fixed;
+    }
+    .navbar ul{
+        background-color: rgba(105, 105, 105, 0.429);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        margin-left: -100%;
+        transition: all 0.8s ease-in-out;
+        backdrop-filter: blur(5px);
+    }
+    .menu_mobile{
+        margin-left: 0;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        font-size: 40px;
+    }
+    #accueil{
+        margin: 0;
+    }
+    #numéro{
+        font-size: 25px;
+        margin: 0;
+        padding: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    #nous{
+        margin: 0;
+    }
+}
+
+/*--------------------------------------------------------------------- fin menu---------------------------------------------------------------------------*/
+.texte_page_accueil{
+    font-size: clamp(280%, 5vw, 560%);
+}
+.phrase_accroche{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    right: 15%;
+}
+#phrase_accroche_gradient{
+    background: linear-gradient(to right, #2E91F5, #3FBEF4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#phrase_accroche_deux{
+    color: white;
+    position: relative;
+}
+#phrase_accroche_interrogation{
+    color: white;
+    position: relative;
+}
+
+/*------------------------------------------------------------------Titre--------------------------------------------------------------------*/
+
+.titre{
+    position: absolute;
+    color: white;
+    top: 5%;
+}
+.titre_image{
+    width: 100%;
+}
+
+
+@media screen and (min-height: 1700px){
+    .texte_page_accueil{
+        font-size: clamp(0%, 9vw, 800%);
+    }
+}
+@media screen and (max-width: 1500px){
+    .titre{
+        top: 3%;
+    }
+    .titre_image{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .titre{
+        top: 1%;
+    }
+    .titre_image{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .titre{
+        top: 0%;
+    }
+    .titre_image{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 460px){
+    .titre{
+        top: 0%;
+    }
+    .titre_image{
+        width: 60%;
+    }
+}
+/*------------------------------------------------------------------fin Titre--------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------ fin page d'accueil ----------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------Transition------------------------------------------------------------------------*/
+
+#transition{
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.trait_séparation{
+    background-image: linear-gradient(to left, rgba(0, 194, 255, 0), #0047FF);
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 6%;
+}
+.trait_séparation_deux{
+    background-image: linear-gradient(to right, rgba(0, 194, 255, 0), #0047FF);
+    position: absolute;
+    top: 94%;
+    width: 100%;
+    height: 6%;
+    z-index: 3;
+}
+#titre2{
+    margin-left: auto;
+    margin-right: auto;
+}
+@media all and (max-width: 530px){
+    .trait_séparation{
+        height: 4%;
+        top: 0%;
+    }
+    .trait_séparation2{
+        height: 4%;
+        top: 96%;
+    }
+}
+
+
+/*--------------------------------------------------------------------fin Transition------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------Page deux------------------------------------------------------------------------*/
+.page_deux{
+    position: absolute;
+    top: 121.2%;
+    width: 100%;
+    height: 170%;
+    background-image: linear-gradient(180deg, #FFFF, #649FDB);
+    z-index: 2;
+    
+}
+.bouton_contact{
+    background-image: linear-gradient(to right, #0057FF, #00A3FF);
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: clamp(7vh, 10vw, 18vh);
+    height: clamp(20px, 4vw, 60px);
+    width: clamp(200px, 30vw, 400px);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+.texte_bouton_contact{
+    position: relative;
+    margin: 0;
+    color: white;
+    font-size: clamp(25px, 2.6vw, 42px);
+    display: block;
+    padding-right: 6%;
+    padding-left: 6%;
+    cursor: pointer;
+}
+.texte_bouton_contact_deux{
+    position: absolute;
+    display: none;
+    color: #0047FF;
+    top: -80px;
+    font-size: 30px;
+}
+
+
+.bouton_contact:hover{
+    width: 450px;
+}
+.numéro_page_deux{
+    display: block;
+}
+
+
+.animaux{
+    position: absolute;
+    top: clamp(11%,20vw, 28%);
+    width: 100%;
+    height: 70%;
+}
+.chiens_description{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 49% 51% 56% 44% / 38% 55% 45% 62% ;
+    background-color: white;
+    box-shadow: 25px 20px 20px rgba(0, 0, 0, 0.2),
+    15px 10px 30px inset rgba(0, 0, 0, 0.2),
+    inset -20px -20px 30px rgba(255, 255, 255, 0.9);
+    transition: 0.3s;
+}
+.chats_description{
+    position: absolute;
+    margin-left: 37%;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 45% 55% 39% 61% / 51% 48% 52% 49% ;
+    background-color: white;
+    box-shadow: 25px 20px 20px rgba(0, 0, 0, 0.2),
+    15px 10px 30px inset rgba(0, 0, 0, 0.2),
+    inset -20px -20px 30px rgba(255, 255, 255, 0.9);
+    transition: 0.3s;
+}
+.autres_animaux_description{
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 51% 49% 57% 43% / 34% 49% 51% 66% ;
+    margin-left: 65%;
+    background-color: white;
+    box-shadow: 25px 20px 20px rgba(0, 0, 0, 0.2),
+    15px 10px 30px inset rgba(0, 0, 0, 0.2),
+    inset -20px -20px 30px rgba(255, 255, 255, 0.9);
+    transition: 0.3s;
+}
+
+
+
+
+.chiens{
+    position: relative;
+    color: black;
+    font-size: clamp(15px, 1.7vw, 33px);
+    top: 20%;
+    left: 22%;
+}
+.chiens_titre{
+    font-size: clamp(19px, 1.7vw, 40px);
+    position: absolute;
+    top: 0%;
+    left: 40%;
+}
+.chiens_titre::after{
+    content: '';
+    left: 0;
+    top: 100%;
+    position: absolute;
+    background: rgb(60, 60, 255);
+    height: clamp(3px, 0.4vw, 7px);
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.chats{
+    position: relative;
+    color: black;
+    font-size: clamp(15px, 1.7vw, 33px);
+    top: 20%;
+    left: 22%;
+}
+.chats_titre{
+    font-size: clamp(19px, 1.7vw, 40px);
+    position: absolute;
+    top: 0%;
+    left: 40%;
+}
+.chats_titre::after{
+    content: '';
+    left: 0;
+    top: 100%;
+    position: absolute;
+    background: rgb(60, 112, 255);
+    height: clamp(3px, 0.4vw, 7px);
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+.autres_animaux{
+    position: relative;
+    color: black;
+    font-size: clamp(15px, 1.7vw, 33px);
+    top: 20%;
+    left: 20%;
+}
+.autres_animaux_titre{
+    font-size: clamp(19px, 1.7vw, 40px);
+    position: absolute;
+    top: 0%;
+    left: 26%;
+}
+.autres_animaux_titre::after{
+    content: '';
+    left: 0;
+    top: 100%;
+    position: absolute;
+    background: rgb(60, 157, 255);
+    height: clamp(3px, 0.4vw, 7px);
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.chiens_description:hover{
+    border-radius: 50%;
+    box-shadow: none;
+}
+.chats_description:hover{
+    border-radius: 50%;
+    box-shadow: none;
+}
+.autres_animaux_description:hover{
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.page_trois_titre{
+    position: relative;
+    top: 30%;
+    font-size: 22vw;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: none;
+    z-index: 3;
+    font-weight: 800;
+}
+
+
+
+@media all and (max-width: 740px){
+    .page_deux{
+        height: 240%;
+    }
+    .texte_bouton_contact{
+        top: -5%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: clamp(15px, 4vw, 40px);
+    }
+    .bouton_contact{
+        top: 7%;
+        width: 40%;
+        height: 50px;
+    }
+    .texte_bouton_contact_deux{
+        top: -65px;
+    }
+
+    .chiens_description{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        top: 5%;
+        width: 50vw;
+        height: 50vw;
+    }
+    .chiens{
+        font-size: clamp(20px, 3.5vw, 35px);
+        top: 35%;
+        left: 19%;
+    }
+    .chiens_titre{
+        font-size: clamp(30px, 6vw, 60px);
+        top: -3%;
+        left: 32%;
+    }
+    .chiens_titre::after{
+        height: clamp(5px, 1vw, 12px);
+    }
+
+
+    .chats_description{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        top: 10%;
+        width: 50vw;
+        height: 50vw;
+
+    }
+    .chats{
+        font-size: clamp(20px, 3.5vw, 35px);
+        top: 35%;
+        left: 16%;
+    }
+    .chats_titre{
+        font-size: clamp(30px, 6vw, 60px);
+        left: 35%;
+    }
+    .chats_titre::after{
+        height: clamp(5px, 1vw, 12px);
+    }
+
+
+    .autres_animaux_description{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        top: 15%;
+        width: 50vw;
+        height: 50vw;
+    }
+    .autres_animaux{
+        font-size: clamp(20px, 3.5vw, 35px);
+        top: 35%;
+        left: 16%;
+    }
+    .autres_animaux_titre{
+        font-size: clamp(30px, 6vw, 60px);
+        left: 10%;
+    }
+    .autres_animaux_titre::after{
+        height: clamp(5px, 1vw, 12px);
+    }
+
+
+
+
+    .chiens_description.scroll{
+        border-radius: 50%;
+        box-shadow: none;
+    }
+    .chats_description.scroll_deux{
+        border-radius: 50%;
+        box-shadow: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 570px){
+    .page_deux{
+        height: 220%;
+    }
+    .texte_bouton_contact{
+        font-size: clamp(25px, 5vw, 50px);
+    }
+    .bouton_contact{
+        width: 60%;
+        height: 50px;
+    }
+    .texte_bouton_contact_deux{
+        top: -65px;
+    }
+    .bouton_contact:hover{
+        width: 70%;
+    }
+
+    .chiens_description{
+        left: 0;
+        top: 0%;
+        width: 60vw;
+        height: 60vw;
+    }
+    .chiens{
+        font-size: clamp(25px, 3vw, 30px);
+        top: 30%;
+        left: 19%;
+    }
+    .chiens_titre{
+        font-size: clamp(40px, 6vw, 80px);
+        left: 32%;
+        top: -5%;
+    }
+
+
+    .chats_description{
+        left: 0;
+        top: 5%;
+        width: 60vw;
+        height: 60vw;
+
+    }
+    .chats{
+        font-size: clamp(25px, 3vw, 30px);
+        top: 30%;
+        left: 16%;
+    }
+    .chats_titre{
+        font-size: clamp(40px, 6vw, 80px);
+        left: 35%;
+    }
+
+
+    .autres_animaux_description{
+        left: 0;
+        top: 10%;
+        width: 60vw;
+        height: 60vw;
+    }
+    .autres_animaux{
+        font-size: clamp(25px, 3vw, 30px);
+        top: 35%;
+        left: 16%;
+    }
+    .autres_animaux_titre{
+        font-size: clamp(40px, 5.6vw, 70px);
+        left: 4%;
+    }
+
+
+
+
+    .chiens_description.scroll{
+        border-radius: 50%;
+        box-shadow: none;
+    }
+    .chats_description.scroll_deux{
+        border-radius: 50%;
+        box-shadow: none;
+    }
+}
+
+/*------------------------------------------------------------------fin Page deux------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------Page trois------------------------------------------------------------------------*/
+
+
+
+.page_trois{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 250%;
+    background-color: red;
+}
