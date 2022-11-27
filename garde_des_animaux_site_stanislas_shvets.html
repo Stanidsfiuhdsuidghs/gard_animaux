@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garde des animaux Cannes</title>
+    <link rel="stylesheet" href="garde_des_animaux_site_stanislas_shvets.css">
+</head>
+<body>
+    <nav class="menu">
+        <div class="navbar">
+        <ul>
+            <li id="numéro"><a href="#">06 50 02 94 48</a></li>
+            <li id="accueil"><a href="#">Accueil</a></li>
+            <li id="service"><a href="#">Service</a></li>
+            <li id="avis"><a href="#">Avis</a></li>
+            <li id="nous"><a href="#">Nous</a></li>
+        </ul>
+        </div>
+        <div>
+        <img class="menu_hamburger" src="téléchargement-removebg-preview (1).png">
+        <img class="trois_traits" src="Hamburger_icon.svg.png">
+        </div>
+        <script>
+            const menuHamburger = document.querySelector(".trois_traits")
+            const navLinks = document.querySelector(".navbar")
+     
+            menuHamburger.addEventListener('click',()=>
+            {navLinks.classList.toggle('menu_mobile')})
+    </script>
+    </nav>
+    <div class="titre">
+        <img class="titre_image" src="Sans_titre__17_-removebg-preview.png">
+    </div>
+    <div class="texte_page_accueil">
+        <p class="phrase_accroche">Vous voulez que 
+            <span id="phrase_accroche_gradient">quelqu'un s'occupe</span>
+            <span> de</span>
+            <span id="phrase_accroche_deux"> votre animal durant votre absence</span>
+            <span id="phrase_accroche_interrogation">?</span></p>
+    </div>
+    <div id="transition">
+        <div class="trait_séparation"></div>
+            <img id="titre2" src="Sans titre (16).png">
+        <div class="trait_séparation_deux"></div>
+    </div>
+
+    <div class="page_deux">
+        <div class="bouton_contact">
+            <p class="texte_bouton_contact">Contactez nous</p>
+            <p class="texte_bouton_contact_deux">06 50 02 94 48</p>
+            <script>
+                const contact = document.querySelector(".texte_bouton_contact")
+                const texte = document.querySelector(".texte_bouton_contact_deux")
+         
+                contact.addEventListener('click',()=>
+                {texte.classList.toggle('numéro_page_deux')})
+            </script>
+        </div>
+        <div class="animaux">
+
+                <div class="chiens_description">
+                    <p class="chiens_titre">Chiens</p>
+                    <div class="chiens">
+                    <p>1) Donner à manger</p>
+                    <p>2) Donner à boire</p>
+                    <p>3) Promenades</p>
+                    </div>
+                </div>
+            <div class="chats_description">
+                <p class="chats_titre">Chats</p>
+                <div class="chats">
+                <p>1) Donner à manger</p>
+                <p>2) Donner à boire</p>
+                <p>3) Nettoyer la litière</p>
+                </div>
+            </div>
+            <div class="autres_animaux_description">
+                <p class="autres_animaux_titre">Autres Animaux</p>
+                <div class="autres_animaux">
+                <p>1) Pour les autres</p>
+                <p>animaux nous serons</p>
+                <p>à votre écoute</p>
+                </div>
+            </div>
+        </div>
+        <p class="page_trois_titre">ETAPES</p>
+    </div>
+
+
+    <div class="page_trois">
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
